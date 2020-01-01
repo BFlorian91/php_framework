@@ -53,7 +53,7 @@ class View
             aria-haspopup="true" aria-expanded="false">
             <i class="text-white fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block text-white">Account</span>
           </a>
-          <div class="dropdown-menu">
+          <div class="dropdown-menu bg-dark text-white">
             <form class="px-4 py-3">
               <div class="form-group">
                 <label for="exampleDropdownFormEmail1">Email address</label>
@@ -72,8 +72,8 @@ class View
               <button type="submit" class="btn btn-primary">Sign in</button>
             </form>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">New around here? Sign up</a>
-            <a class="dropdown-item" href="#">Forgot password?</a>
+            <a class="dropdown-item text-white" href="#">New around here? Sign up</a>
+            <a class="dropdown-item text-white" href="#">Forgot password?</a>
           </div>
         </li>
       </ul>
