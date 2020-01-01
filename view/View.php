@@ -41,10 +41,10 @@ class View
         </div>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
           <li class="nav-item">
-            <a class="nav-link"><i class="fas fa-envelope text-white"></i> <span class="clearfix d-none d-sm-inline-block text-white">Contact</span></a>
+            <a href="index.php?page=contact" class="nav-link"><i class="fas fa-envelope text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Contact</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"><i class="far fa-comments text-white"></i> <span class="clearfix d-none d-sm-inline-block text-white">Support</span></a>
+            <a href="index.php?page=" class="nav-link"><i class="far fa-comments text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Support</span></a>
           </li>
           <li class="nav-item dropleft">
             <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,7 +76,7 @@ class View
           </ul>
         </nav>
       </header>
-      <div style="height: 100px;"></div>
+      <div style="height: 150px;"></div>
     <?php
   }
 

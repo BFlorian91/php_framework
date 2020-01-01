@@ -13,8 +13,8 @@ class Controller
   {
     $page = isset($_GET["page"]) ? $_GET["page"] : null;
     switch ($page) {
-      case "home":
-        echo "test";
+      case "contact":
+        $route = new ControllerContact();
         break;
       default:
         $route = new ControllerHome();
