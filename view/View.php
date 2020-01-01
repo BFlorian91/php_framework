@@ -34,17 +34,17 @@ class View
   public function navbar()
   { ?>
     <header>
-      <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav bg-dark text-white">
+      <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav bg-dark">
         <img src="lib/img/logo.png" class="img-fluid" width="3%" alt="logo">
         <div class="mr-auto">
-          <h3 class="mt-1 ml-4 font-weight-bold">TodoApp</h3>
+          <h3 class="mt-1 ml-4 font-weight-bold text-white">TodoApp</h3>
         </div>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
           <li class="nav-item">
-            <a class="nav-link"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+            <a class="nav-link"><i class="fas fa-envelope text-white"></i> <span class="clearfix d-none d-sm-inline-block text-white">Contact</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+            <a class="nav-link"><i class="far fa-comments text-white"></i> <span class="clearfix d-none d-sm-inline-block text-white">Support</span></a>
           </li>
           <li class="nav-item dropleft">
             <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
