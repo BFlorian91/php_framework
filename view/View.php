@@ -79,6 +79,7 @@ class View
       </ul>
     </nav>
   </header>
+  <div style="height: 100px;"></div>
   <?php
       }
 

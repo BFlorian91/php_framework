@@ -6,7 +6,7 @@
 
     public function __construct()
     {
-      $this->_view = new View();
+      $this->_view = new ViewUnderConstruct();
     }
 
     public function start()
