@@ -16,6 +16,9 @@ class Controller
       case "contact":
         $route = new ControllerContact();
         break;
+      case "list":
+        $route = new ControllerList();
+      break;
       default:
         $route = new ControllerHome();
         break;

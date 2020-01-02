@@ -19,6 +19,10 @@ class View
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Todo</title>
+      <link rel="stylesheet" href="/lib/styles/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
       <!-- Bootstrap core CSS -->
@@ -35,9 +39,9 @@ class View
   { ?>
     <header>
       <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav bg-dark">
-        <img src="lib/img/logo.png" class="img-fluid" width="3%" alt="logo">
+        <a href="index.php?" style="width: 40px"><img src="lib/img/logo.png" class="img-fluid" alt="logo"></a>
         <div class="mr-auto">
-          <h3 class="mt-1 ml-4 font-weight-bold text-white">TodoApp</h3>
+          <a href="index.php?"><h3 class="mt-1 ml-4 font-weight-bold text-white font-pacifico">TodoApp</h3></a>
         </div>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
           <li class="nav-item">

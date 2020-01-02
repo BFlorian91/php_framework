@@ -1,0 +1,35 @@
+body {
+  color: whitesmoke !important;
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.blue-light {
+  background-color: #98FDD9 !important;
+}
+
+.orange-light {
+  background-color: #FFC870 !important;
+}
+
+.yellow-light {
+  background-color: #EFFC98 !important;
+}
+
+.green-light {
+  background-color: #2CFA2C !important;
+}
+
+.orange-med {
+  background-color:#F68054 !important;
+}
