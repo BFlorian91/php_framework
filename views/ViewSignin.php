@@ -25,7 +25,7 @@ class ViewSignin extends View
           </div>
           <div>
             <!-- Forgot password -->
-            <a href="">Forgot password?</a>
+            <a href="index.php?url=not-available">Forgot password?</a>
           </div>
         </div>
 

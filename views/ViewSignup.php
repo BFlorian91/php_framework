@@ -12,32 +12,32 @@ class ViewSignup extends View
         <div class="form-row mb-4">
           <div class="col">
             <!-- First name -->
-            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+            <input type="text" name="firstName" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
           </div>
           <div class="col">
             <!-- Last name -->
-            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+            <input type="text" name="lastName" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
           </div>
         </div>
 
         <!-- E-mail -->
-        <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+        <input type="email" name="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
 
         <!-- Password -->
-        <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+        <input type="password" name="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
         <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
           At least 8 characters and 1 digit
         </small>
 
         <!-- Phone number -->
-        <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+        <input type="text" name="phoneNumber" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
         <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
           Optional - for two step authentication
         </small>
 
         <!-- Newsletter -->
         <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+          <input type="checkbox" name="newsletter" class="custom-control-input" id="defaultRegisterFormNewsletter">
           <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
         </div>
 
