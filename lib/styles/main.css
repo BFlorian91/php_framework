@@ -1,5 +1,15 @@
 body {
   color: whitesmoke !important;
+  background-color: #6c7b95 !important;
+  height: 100vh;
+}
+
+nav {
+  background-color: #464159 !important;
+}
+
+footer > div {
+  background-color: #464159 !important;
 }
 
 .font-pacifico {
@@ -27,7 +37,7 @@ body {
 }
 
 .green-light {
-  background-color: #2CFA2C !important;
+  background-color: #c7f0db !important;
 }
 
 .orange-med {

@@ -19,7 +19,7 @@ class View
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Todo</title>
-      <link rel="stylesheet" href="/lib/styles/main.css">
+      <link rel="stylesheet" type="text/css" href="lib/styles/main.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -31,14 +31,14 @@ class View
       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
     </head>
 
-    <body class="" style="background: #1E2023;">
+    <body>
     <?php
   }
 
   public function navbar()
   { ?>
     <header>
-      <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav bg-dark">
+      <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
         <a href="index.php?" style="width: 40px"><img src="lib/img/logo.png" class="img-fluid" alt="logo"></a>
         <div class="mr-auto">
           <a href="index.php?"><h3 class="mt-1 ml-4 font-weight-bold text-white font-pacifico">TodoApp</h3></a>
@@ -86,9 +86,6 @@ class View
 
   public function body()
   { ?>
-    <div class="container">
-
-    </div>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -104,7 +101,7 @@ class View
 
   public function footer()
   { ?>
-    <footer class="page-footer font-small bg-dark fixed-bottom">
+    <footer class="page-footer font-small fixed-bottom">
 
       <div class="footer-copyright text-center py-2">
         <p>©2020 Copyright: Florian Beaumont</p>
