@@ -21,5 +21,12 @@
       $this->_dsn = "mysql:dbname$this->_database;port=$this->_port;host=$this->_host";
     }
 
-
+    public function connectToDb()
+    {
+      try {
+        $this->_pdo = new PDO($this->_dsn, $this->_user, $this->_passwd);
+      } catch (PDOException $err) {
+        echo "Connection failed: " . $err->getMessage();
+      }
+    }
   }
