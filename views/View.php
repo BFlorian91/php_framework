@@ -3,10 +3,12 @@
 class View
 {
   protected $_html_element;
+  private $_menuItems;
 
   public function __construct()
   {
     $this->_html_element = null;
+    $this->_menuItems = ["Your List", "Contact", "Account", "Signin"];
   }
 
   public function header()
@@ -31,7 +33,7 @@ class View
       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body style="margin-top: 100px">
     <?php
   }
 
@@ -39,48 +41,25 @@ class View
   { ?>
     <header>
       <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
-        <a href="index.php?" style="width: 40px"><img src="lib/img/logo.png" class="img-fluid" alt="logo"></a>
+        <a href="home" style="width: 40px"><img src="lib/img/logo.png" class="img-fluid" alt="logo"></a>
         <div class="mr-auto">
-          <a href="index.php?"><h3 class="mt-1 ml-4 font-weight-bold text-white font-pacifico">TodoApp</h3></a>
+          <a href="home"><h3 class="mt-1 ml-4 font-weight-bold text-white font-pacifico">TodoApp</h3></a>
         </div>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
           <li class="nav-item">
-            <a href="index.php?page=contact" class="nav-link"><i class="fas fa-envelope text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Contact</span></a>
+            <a href="home" class="nav-link"><i class="fas fa-home text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Your list</span></a>
           </li>
           <li class="nav-item">
-            <a href="index.php?page=" class="nav-link"><i class="far fa-comments text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Support</span></a>
+            <a href="contact-us" class="nav-link"><i class="fas fa-envelope text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Contact</span></a>
           </li>
           <li class="nav-item dropleft">
-            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="signin" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="text-white fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block text-white">Account</span>
             </a>
-            <div class="dropdown-menu bg-dark text-white">
-              <form class="px-4 py-3">
-                <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="email@example.com">
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Password">
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                  <label class="form-check-label" for="dropdownCheck">
-                        Remember me
-                      </label>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                </form>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item text-white" href="#">New around here? Sign up</a>
-                <a class="dropdown-item text-white" href="#">Forgot password?</a>
-              </div>
             </li>
           </ul>
         </nav>
       </header>
-      <div style="height: 150px;"></div>
     <?php
   }
 
