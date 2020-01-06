@@ -1,15 +1,11 @@
 body {
   color: whitesmoke !important;
-  background-color: #6c7b95 !important;
+  background-color: #222831 !important;
   height: 100vh;
 }
 
-nav {
-  background-color: #464159 !important;
-}
-
-footer > div {
-  background-color: #464159 !important;
+nav footer > div{
+  background-color: #393e46 !important;
 }
 
 .font-pacifico {

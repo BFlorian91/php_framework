@@ -41,19 +41,22 @@ class View
   { ?>
     <header>
       <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
-        <a href="home" style="width: 40px"><img src="lib/img/logo.png" class="img-fluid" alt="logo"></a>
+        <a href="index.php?url=home" style="width: 40px"><img src="lib/img/logo.png" class="img-fluid" alt="logo"></a>
         <div class="mr-auto">
-          <a href="home"><h3 class="mt-1 ml-4 font-weight-bold text-white font-pacifico">TodoApp</h3></a>
+          <a href="index.php?url=home"><h3 class="mt-1 ml-4 font-weight-bold text-white font-pacifico">TodoApp</h3></a>
         </div>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
           <li class="nav-item">
-            <a href="home" class="nav-link"><i class="fas fa-home text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Your list</span></a>
+            <a href="index.php?url=home" class="nav-link"><i class="fas fa-home text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Your list</span></a>
           </li>
+          <!-- <li class="nav-item">
+            <a href="index.php?url=contact-us" class="nav-link"><i class="fas fa-envelope text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Contact</span></a>
+          </li> -->
           <li class="nav-item">
-            <a href="contact-us" class="nav-link"><i class="fas fa-envelope text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Contact</span></a>
+            <a href="index.php?url=signin" class="nav-link"><i class="fas fa-sign-in-alt text-white"></i><span class="clearfix d-none d-sm-inline-block text-white">Signin</span></a>
           </li>
           <li class="nav-item dropleft">
-            <a class="nav-link" href="signin" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="index.php?url=signin" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="text-white fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block text-white">Account</span>
             </a>
             </li>

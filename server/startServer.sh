@@ -1,4 +1,4 @@
-docker run --name "serverLampTodo" --rm -p 81:80 -v /Users/florian/Personal/Todo/:/var/www/html fauria/lamp
+docker run --name "serverLampTodo" --rm -p 81:80 -v /Users/florian/Personal/Todo/:/var/www/html linuxconfig/lemp
 
 ## Lemp server
 # linuxconfig/lemp

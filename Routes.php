@@ -1,16 +1,7 @@
 <?php
 
-    // Route::set('index.php', function()
-    // {
-    //   Index::CreateView('Index');
-    // });
-
     Route::set('home', function() {
       ControllerList::CreateView('ViewList');
-    });
-
-    Route::set('contact-us', function() {
-      ControllerContact::CreateView('ViewContact');
     });
 
     Route::set('signin', function() {
@@ -24,3 +15,10 @@
     Route::set('account', function() {
       ControllerAccount::CreateView('ViewAccount');
     });
+
+    Route::set('not-available', function() {
+      ControllerNotAvailable::CreateView('ViewNotAvailable');
+    });
+    // Route::set('contact-us', function() {
+    //   ControllerContact::CreateView('ViewContact');
+    // });
