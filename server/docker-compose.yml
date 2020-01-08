@@ -31,7 +31,7 @@ services:
             - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
             - MYSQL_DATABASE=${DB_NAME}
         volumes:
-            - ./docker/mysql/custom.cnf:/etc/mysql/conf.d/custom.cnf
+            - ./mysql/custom.cnf:/etc/mysql/conf.d/custom.cnf
 
     phpmyadmin:
         env_file:
