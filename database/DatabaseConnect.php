@@ -17,6 +17,7 @@
       $this->_host = getenv('DB_SERVER');
       $this->_user = getenv('DB_USER');
       $this->_passwd = getenv('DB_PASSWORD');
+      $this->_pdo = null;
       
       $this->_dsn = "mysql:dbname$this->_database;port=$this->_port;host=$this->_host";
     }

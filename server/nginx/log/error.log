@@ -68,3 +68,22 @@
 2020/01/07 05:52:54 [emerg] 1#1: host not found in upstream "fl_php" in /etc/nginx/nginx.conf:39
 2020/01/07 05:54:48 [emerg] 1#1: host not found in upstream "fl_php" in /etc/nginx/nginx.conf:39
 2020/01/07 05:57:23 [emerg] 1#1: host not found in upstream "fl_php" in /etc/nginx/nginx.conf:39
+2020/01/07 06:04:30 [error] 6#6: *1 open() "/app/home" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /home HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/07 06:05:16 [error] 6#6: *4 open() "/app/home" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /home HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/07 06:07:29 [emerg] 1#1: duplicate location "/" in /etc/nginx/nginx.conf:44
+2020/01/07 06:08:37 [emerg] 1#1: duplicate location "/" in /etc/nginx/nginx.conf:44
+2020/01/07 06:09:04 [emerg] 1#1: duplicate location "/" in /etc/nginx/nginx.conf:44
+2020/01/07 06:27:03 [emerg] 1#1: unexpected "}" in /etc/nginx/nginx.conf:30
+2020/01/07 06:27:20 [error] 6#6: *1 open() "/etc/nginx/html/home" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /home HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/07 06:27:25 [error] 6#6: *1 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET / HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/07 06:37:59 [error] 6#6: *1 open() "/etc/nginx/html/home" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /home HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/07 06:38:04 [error] 6#6: *1 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET / HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/07 06:45:24 [error] 6#6: *1 open() "/etc/nginx/html/home" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /home HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/07 06:49:02 [error] 6#6: *1 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET / HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/07 06:54:04 [error] 6#6: *1 open() "/etc/nginx/html/home" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /home HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/07 08:21:27 [error] 7#7: *1 open() "/etc/nginx/html/lib/styles/main.css" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /lib/styles/main.css HTTP/1.1", host: "192.168.99.100:8080", referrer: "http://192.168.99.100:8080/index.php?url=home"
+2020/01/07 08:21:27 [error] 7#7: *1 open() "/etc/nginx/html/lib/img/logo.png" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /lib/img/logo.png HTTP/1.1", host: "192.168.99.100:8080", referrer: "http://192.168.99.100:8080/index.php?url=home"
+2020/01/07 08:21:45 [error] 7#7: *1 open() "/etc/nginx/html/lib/styles/main.css" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /lib/styles/main.css HTTP/1.1", host: "192.168.99.100:8080", referrer: "http://192.168.99.100:8080/index.php?url=home"
+2020/01/07 08:21:45 [error] 7#7: *1 open() "/etc/nginx/html/lib/img/logo.png" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /lib/img/logo.png HTTP/1.1", host: "192.168.99.100:8080", referrer: "http://192.168.99.100:8080/index.php?url=home"
+2020/01/07 08:32:58 [error] 6#6: *1 open() "/app/home" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /home HTTP/1.1", host: "192.168.99.100:8080"
+2020/01/08 02:40:12 [error] 6#6: *3 open() "/app/favicon.ico" failed (2: No such file or directory), client: 192.168.99.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.99.100:8080", referrer: "http://192.168.99.100:8080/index.php?url=home"

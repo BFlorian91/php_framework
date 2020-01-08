@@ -7,37 +7,42 @@ services:
         env_file:
             - .env
         volumes:
-            - "./php/config/php.ini:/usr/local/etc/php/php.ini:rw"
-            - "../:/script:ro"
+            - ./php/config/php.ini:/usr/local/etc/php/php.ini:rw
+            - ../:/script:ro
 
     nginx:
         container_name: fl_nginx
         image: nginx
         ports:
-            - ${SERVER_PORT}:80
+            - 8080:80
         volumes:
-            - "../:/app:ro"
-            - "./nginx/log:/var/log/nginx"
-            - "./nginx/config/nginx.conf:/etc/nginx/nginx.conf:rw"
+            - ../:/app:ro
+            - ./nginx/log:/var/log/nginx
+            - ./nginx/config/nginx.conf:/etc/nginx/nginx.conf:rw
 
-    # mysql:
-    #     image: mysql:5.7
-    #     environment:
-    #         - MYSQL_ROOT_PASSWORD=123
-    #         - MYSQL_DATABASE=${DB_NAME}
-    #         - MYSQL_USER=${DB_USER}
-    #         - MYSQL_PASSWORD=${DB_PASSWORD}
-    #     volumes:
-    #         - ./docker/mysql/custom.cnf:/etc/mysql/conf.d/custom.cnf
+    mysql:
+        container_name: fl_mysql
+        image: mysql:5.7
+        ports:
+            - ${DB_PORT}:3306
+        env_file:
+            - ./.env
+        environment:
+            - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+            - MYSQL_DATABASE=${DB_NAME}
+        volumes:
+            - ./docker/mysql/custom.cnf:/etc/mysql/conf.d/custom.cnf
 
-    # phpmyadmin:
-    #     image: phpmyadmin/phpmyadmin
-    #     ports:
-    #         - ${PMA_PORT}:80
-    #     environment:
-    #         - PMA_HOST=${DB_HOST}
+    phpmyadmin:
+        env_file:
+            - ./.env
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - ${PMA_PORT}:80
+        environment:
+            - PMA_HOST=${DB_HOST}
 
-    # maildev:
-    #     image: djfarrelly/maildev
-    #     ports:
-    #         - ${MAILDEV_PORT}:80
+    maildev:
+        image: djfarrelly/maildev
+        ports:
+            - ${MAILDEV_PORT}:80

@@ -1,4 +1,0 @@
-RewriteEngine On
-AddType text/css .css
-AddType text/javascript .js
-RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]

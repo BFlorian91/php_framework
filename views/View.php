@@ -21,7 +21,7 @@ class View
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Todo</title>
-      <link rel="stylesheet" type="text/css" href="lib/styles/main.css">
+      <link rel="stylesheet" type="text/css" href="../lib/styles/main.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@ class View
   { ?>
     <header>
       <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
-        <a href="index.php?url=home" style="width: 40px"><img src="lib/img/logo.png" class="img-fluid" alt="logo"></a>
+        <a href="index.php?url=home" style="width: 40px"><img src="../lib/img/logo.png" class="img-fluid" alt="logo"></a>
         <div class="mr-auto">
           <a href="index.php?url=home"><h3 class="mt-1 ml-4 font-weight-bold text-white font-pacifico">TodoApp</h3></a>
         </div>
